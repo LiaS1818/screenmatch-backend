@@ -8,14 +8,15 @@ import com.aluracursos.screenmatch.service.ConvierteDatos;
 import java.util.*;
 import java.util.stream.Collectors;
 
+
 public class Principal2 {
-    private Scanner teclado = new Scanner(System.in);
-    private ConsumoAPI consumoAPI = new ConsumoAPI();
+    private final Scanner teclado = new Scanner(System.in);
+    private final ConsumoAPI consumoAPI = new ConsumoAPI();
     private final String URL_BASE = "http://www.omdbapi.com/?t=";
     private final String API_KEY = "&apikey=f2c080b5";
-    private ConvierteDatos conversor = new ConvierteDatos();
-    private List<DatosSerie> datosSeries = new ArrayList<>();
-    private SerieRepository repositorio;
+    private final ConvierteDatos conversor = new ConvierteDatos();
+    private final List<DatosSerie> datosSeries = new ArrayList<>();
+    private final SerieRepository repositorio;
     private List<Serie> series;
     private Optional<Serie> serieBuscada;
 
@@ -38,7 +39,7 @@ public class Principal2 {
                     8 - Buscar episodios por titulo
                     9 - Top 5 mejores episodios por Serie
                     0 - Salir
-                    
+
                     """;
             System.out.println(menu);
             opcion = teclado.nextInt();

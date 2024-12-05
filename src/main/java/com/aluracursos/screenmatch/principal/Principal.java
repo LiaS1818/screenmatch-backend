@@ -11,16 +11,17 @@ import org.w3c.dom.ls.LSOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+//import java.util.*;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 public class Principal {
-    private Scanner teclado = new Scanner(System.in);
-    private ConsumoAPI consumoAPI = new ConsumoAPI();
+    private final Scanner teclado = new Scanner(System.in);
+    private final ConsumoAPI consumoAPI = new ConsumoAPI();
     private final String URL_BASE = "http://www.omdbapi.com/?t=";
     private final String API_KEY = "&apikey=f2c080b5";
-    private ConvierteDatos conversor = new ConvierteDatos();
+    private final ConvierteDatos conversor = new ConvierteDatos();
 
 
     public void muestraElMenu(){

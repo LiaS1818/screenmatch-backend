@@ -19,7 +19,7 @@
 //	}
 //
 //	@Override
-//	public void run(String... args) throws Exception {
+//	public void run(String... args) {
 //		Principal2 principal = new Principal2(repository);
 //		principal.muestraElMenu();
 //	}
