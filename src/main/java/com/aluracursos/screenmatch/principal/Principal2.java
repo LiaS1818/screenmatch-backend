@@ -39,7 +39,6 @@ public class Principal2 {
                     8 - Buscar episodios por titulo
                     9 - Top 5 mejores episodios por Serie
                     0 - Salir
-
                     """;
             System.out.println(menu);
             opcion = teclado.nextInt();

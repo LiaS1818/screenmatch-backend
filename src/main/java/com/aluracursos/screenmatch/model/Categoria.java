@@ -8,8 +8,10 @@ public enum Categoria {
     DRAMA("Drama", "Drama"),
     ANIMACION("Animation", "Anime");
 
+
     private final String categoriaOmdb;
     private final String categoriaEspanol;
+
 
     Categoria(String categoriaOmdb, String categoriaEspanol) {
         this.categoriaOmdb = categoriaOmdb;
